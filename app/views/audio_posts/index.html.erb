@@ -5,8 +5,8 @@
 <table>
   <thead>
     <tr>
-      <th>Content</th>
       <th>User name</th>
+      <th>Content</th>
       <th>Created at</th>
       <th>Updated at</th>
       <th colspan="3"></th>
@@ -16,8 +16,8 @@
   <tbody>
     <% @audio_posts.each do |audio_post| %>
       <tr>
-        <td><%= audio_post.content %></td>
         <td><%= audio_post.user_name %></td>
+        <td><%= audio_post.content %></td>
         <td><%= audio_post.created_at %></td>
         <td><%= audio_post.updated_at %></td>
         <td><%= link_to 'Show', audio_post %></td>

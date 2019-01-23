@@ -1,8 +1,8 @@
 class CreateAudioPosts < ActiveRecord::Migration[5.1]
   def change
     create_table :audio_posts do |t|
-      t.string :content
-      t.text :user_name
+      t.string :user_name
+      t.text :content
       t.datetime :created_at
       t.datetime :updated_at
 
