@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Audio Posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th>User name</th>
+      <th>Created at</th>
+      <th>Updated at</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @audio_posts.each do |audio_post| %>
+      <tr>
+        <td><%= audio_post.content %></td>
+        <td><%= audio_post.user_name %></td>
+        <td><%= audio_post.created_at %></td>
+        <td><%= audio_post.updated_at %></td>
+        <td><%= link_to 'Show', audio_post %></td>
+        <td><%= link_to 'Edit', edit_audio_post_path(audio_post) %></td>
+        <td><%= link_to 'Destroy', audio_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Audio Post', new_audio_post_path %>

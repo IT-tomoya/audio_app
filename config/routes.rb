@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root 'application#hello'
+  resources :audio_posts
+  root 'audio_posts#index'
 end
