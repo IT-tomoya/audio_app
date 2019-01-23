@@ -20,3 +20,6 @@
 
 .env.dev
 .idea/*
+
+#アップロード画像の除外
+/public/uploads

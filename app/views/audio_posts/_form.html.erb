@@ -21,6 +21,10 @@
     <%= form.text_area :content, id: :audio_post_content %>
   </div>
 
+  <span class="picture">
+    <%= form.file_field :picture %>
+  </span>
+
   <div class="field">
     <%= form.label :created_at %>
     <%= form.datetime_select :created_at, id: :audio_post_created_at %>
