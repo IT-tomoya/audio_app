@@ -11,6 +11,11 @@
 </p>
 
 <p>
+  <strong>picture:</strong>
+  <%= image_tag @audio_post.picture.url if @audio_post.picture? %>
+</p>
+
+<p>
   <strong>Created at:</strong>
   <%= @audio_post.created_at %>
 </p>
