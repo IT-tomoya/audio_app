@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/IT-tomoya/audio_app.svg?branch=master)](https://travis-ci.org/IT-tomoya/audio_app)
+
 音声ファイルアップロードサービス  
 
 - アカウント不要で利用可能  
