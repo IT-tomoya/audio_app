@@ -1,6 +1,6 @@
 class AudioPost < ApplicationRecord
   mount_uploader :picture, PictureUploader
-
+  mount_uploader :audio, AudioUploader
 
   private
 
