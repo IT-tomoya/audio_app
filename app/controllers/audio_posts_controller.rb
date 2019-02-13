@@ -69,6 +69,6 @@ class AudioPostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def audio_post_params
-      params.require(:audio_post).permit(:user_name, :content, :created_at, :updated_at, :picture)
+      params.require(:audio_post).permit(:user_name, :content, :created_at, :updated_at, :picture, :audio)
     end
 end

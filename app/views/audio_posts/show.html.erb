@@ -25,5 +25,12 @@
   <%= @audio_post.updated_at %>
 </p>
 
+<p>
+  <strong>audio</strong>
+  <audio src="<%= @audio_post.audio.url %>" controls>
+    <p><a src="<%= @audio_post.audio.url %>"></a></p>
+  </audio>
+</p>
+
 <%= link_to 'Edit', edit_audio_post_path(@audio_post) %> |
 <%= link_to 'Back', audio_posts_path %>

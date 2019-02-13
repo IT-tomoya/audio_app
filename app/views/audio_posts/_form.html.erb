@@ -35,6 +35,10 @@
     <%= form.datetime_select :updated_at, id: :audio_post_updated_at %>
   </div>
 
+  <span class="audio">
+    <%= form.file_field :audio, accept: 'audio/wav, audio/mp3, audio/mp4' %>
+  </span>
+
   <div class="actions">
     <%= form.submit %>
   </div>
